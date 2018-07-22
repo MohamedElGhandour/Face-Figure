@@ -1,44 +1,223 @@
-/* Required for full background image */
-
-html,
-body,
-header,
-.view {
-  height: 100%;
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
+/* Navbar */
+
+.default-color {
+  background-color: #fff !important;
 }
 
-.top-nav-collapse {
-  background-color: #78909c !important;
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:active,
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover {
+  background-color: #8abf00 !important;
 }
 
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+.navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+  color: #89bf00;
+  font-weight: bold;
+  background-color: transparent !important;
 }
 
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
-  }
+.navbar.navbar-light .navbar-nav .nav-item>.nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link:hover {
+  background-color: #89bf00 !important;
+  color: white
 }
 
-h1 {
-  letter-spacing: 8px;
+/* ./Navbar */
+
+/* Carousal */
+
+.carousalContainer {
+  height: 650px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-h5 {
-  letter-spacing: 3px;
+.carousalContainer.car1 {
+  background-image: url('../img/1\ 0eEY8GcSurQNq30i1kWk9g.jpeg');
 }
 
-.hr-light {
-  border-top: 3px solid #fff;
-  width: 80px;
+.carousalContainer.car2 {
+  background-image: url('../img/Cover\ image\ 2.jpg');
 }
+
+.carousalContainer.car3 {
+  background-image: url('../img/f781709b783aed56c4fe37629bfc3db4.jpg');
+}
+
+.carousalContainer .carh2 {
+  
+}
+
+.carousalContainer .p {
+  
+}
+
+/* ./Carousal */
+
+/* AllSection */
+
+.allSections {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.allSections .headSection h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.allSections .headSection p {
+  color: #89bf00;
+  letter-spacing: .2em;
+  text-transform: capitalize;
+}
+
+.allSections .headSection p span {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+}
+
+.allSections .headSection p span::before,
+.allSections .headSection p span::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #89bf00;
+  top: 11px;
+}
+
+.allSections .headSection p span::after {
+  right: -50px;
+}
+
+.allSections .headSection p span::before {
+  left: -50px;
+}
+
+.btn-success {
+  background-color: #071042 !important;
+  color: #fff !important;
+}
+
+/* Section About */
+
+.about {
+  background-color: #F7F7F7;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+/* ./Section About */
+
+/* Section Treatment */
+
+.treatment .btn-card {
+  display: block;
+}
+
+.treatment .card {
+  margin-top: 50px;
+}
+
+/* ./Sction treatment */
+
+/* Section befAft */
+
+.befAft {
+  background-image: url('../img/banner22.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.allSections.befAft .headSection h2 {
+  color: #fff !important;
+}
+
+.allSections.befAft {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.befAft .bgImage {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.allSections.befAft .carousalContainer {
+  height: 240px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.allSections.befAft .carousel-caption {
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  bottom: 0;
+  background: rgba(7, 16, 66, 0.48);
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  transition: all .4s;
+}
+
+.allSections.befAft .carousel.slide:hover .carousel-caption {
+  opacity: 1;
+}
+
+.allSections.befAft .carousel-caption h5 {
+  font-weight: bold;
+}
+
+.allSections.befAft .carousalContainer.car4 {
+  background-image: url('../img/car4.png');
+}
+.allSections.befAft .carousalContainer.car5 {
+  background-image: url('../img/car5.png');
+}
+.allSections.befAft .carousalContainer.car7 {
+  background-image: url('../img/car7.png');
+}
+.allSections.befAft .carousalContainer.car8 {
+  background-image: url('../img/car8.png');
+}
+.allSections.befAft .carousalContainer.car10 {
+  background-image: url('../img/car9.png');
+}
+.allSections.befAft .carousalContainer.car11 {
+  background-image: url('../img/car10.png');
+}
+
+.allSections.befAft .carousel.slide {
+  margin: auto;
+  margin-top:50px;
+  width: 350px;
+}
+
+/* ./Section befAft */
+
+/* ./AllSection */
+
+/* Footer */
+
+.mdb-color.lighten-3 {
+  background-color: #071042 !important;
+}
+
+/* ./Footer */
